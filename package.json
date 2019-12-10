@@ -1,17 +1,32 @@
 {
-  "name": "ejs-challenge",
+  "name": "ejsblogtest",
   "version": "1.0.0",
-  "description": "",
+  "description": "Git repo for the boss level test",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Gerhard",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.3",
     "ejs": "^2.6.1",
     "express": "^4.16.3",
-    "lodash": "^4.17.11"
-  }
+    "lodash": "^4.17.15"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AcousticMotorbiker/ejsblogtest.git"
+  },
+  "keywords": [
+    "Test",
+    "do",
+    "not",
+    "use"
+  ],
+  "bugs": {
+    "url": "https://github.com/AcousticMotorbiker/ejsblogtest/issues"
+  },
+  "homepage": "https://github.com/AcousticMotorbiker/ejsblogtest#readme"
 }
