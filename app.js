@@ -18,26 +18,26 @@ app.use(express.static("public"));
 
 let posts = [];
 
-app.get("/", function(req, res){
+app.get("/", (req, res) => {
   res.render("home", {
     startingContent: homeStartingContent,
     posts: posts
     });
 });
 
-app.get("/about", function(req, res){
+app.get("/about", (req, res) => {
   res.render("about", {aboutContent: aboutContent});
 });
 
-app.get("/contact", function(req, res){
+app.get("/contact", (req, res) => {
   res.render("contact", {contactContent: contactContent});
 });
 
-app.get("/compose", function(req, res){
+app.get("/compose", (req, res) => {
   res.render("compose");
 });
 
-app.post("/compose", function(req, res){
+app.post("/compose", (req, res) => {
   const post = {
     title: req.body.postTitle,
     content: req.body.postBody
@@ -49,10 +49,10 @@ app.post("/compose", function(req, res){
 
 });
 
-app.get("/posts/:postName", function(req, res){
+app.get("/posts/:postName", (req, res) => {
   const requestedTitle = _.lowerCase(req.params.postName);
 
-  posts.forEach(function(post){
+  posts.forEach((post) => {
     const storedTitle = _.lowerCase(post.title);
 
     if (storedTitle === requestedTitle) {
